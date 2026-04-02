@@ -1,6 +1,6 @@
 # CLAW.md
 
-This file provides guidance to Claw Code when working with code in this repository.
+MyAI-Tool
 
 ## Detected stack
 - Languages: Rust.
