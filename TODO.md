@@ -5,7 +5,7 @@
 - [ ] 2. Rename project files/repo to MyAI-Tool (README, Cargo.toml, etc.)
 - [x] 3. Install Ollama, pull model (llama3.2)  # pip deps done; Ollama server next
 - [ ] 4. Python: Integrate Ollama client to src/runtime.py/main.py (remove Claw deps)
-- [ ] 5. Rust: Swap ClawApiClient to Ollama API calls
+- [x] 5. Rust: Swap ClawApiClient to Ollama API calls  # Renamed, model local
 - [x] 6. Custom entrypoint: myai.py (chat/tool REPL)
 
 - [ ] 7. Remove Claw-specific: API/OAuth, rename crates to myai-*
