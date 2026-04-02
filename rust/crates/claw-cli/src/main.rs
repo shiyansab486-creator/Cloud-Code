@@ -40,7 +40,7 @@ use runtime::{
 use serde_json::json;
 use tools::GlobalToolRegistry;
 
-const DEFAULT_MODEL: &str = "claude-opus-4-6";
+const DEFAULT_MODEL: &str = "llama3.2";
 fn max_tokens_for_model(model: &str) -> u32 {
     if model.contains("opus") {
         32_000
