@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAI-Tool - Local AI Code Assistant with Bluetooth</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyAI-Tool</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#bluetooth">Bluetooth</a></li>
+                <li><a href="#quickstart">Quickstart</a></li>
+                <li><a href="#download">Download</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>MyAI-Tool</h1>
+            <p>Local AI Code Assistant powered by Ollama.<br>Bluetooth-enabled hardware control.</p>
+            <img src="../assets/clawd-hero.jpeg" alt="MyAI Hero" class="hero-image">
+            <div class="cta">
+                <a href="#quickstart" class="btn primary">Get Started</a>
+                <a href="#bluetooth" class="btn secondary">Try Bluetooth Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="fas fa-robot"></i>
+                <h3>Local AI REPL</h3>
+                <p>Chat with local LLM (llama3.2) with tools: file read/write, bash, search.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code"></i>
+                <h3>Code Assistant</h3>
+                <p>Python/Rust fork of CLAW. Edit files, run commands, debug locally.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-bluetooth"></i>
+                <h3>Bluetooth Control</h3>
+                <p>Web Bluetooth API: Scan, connect, control BLE devices directly from browser.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-download"></i>
+                <h3>Easy Install</h3>
+                <p>Ollama + myai.py. No cloud, privacy-first, offline capable.</p>
+            </div>
+        </div>
+        <div class="star-history">
+            <a href="https://star-history.com/#shiyansab486-creator/Cloud-Code">
+                <img src="https://api.star-history.com/svg?repos=shiyansab486-creator/Cloud-Code&type=Date" alt="Star History">
+            </a>
+        </div>
+    </section>
+
+    <section id="bluetooth" class="bluetooth-demo">
+        <h2>Bluetooth Demo <small>(Chrome/Edge, enable localhost:8000)</small></h2>
+        <div class="demo-controls">
+            <button id="scanBtn" class="btn primary"><i class="fas fa-search"></i> Scan Devices</button>
+            <button id="connectBtn" class="btn secondary" disabled><i class="fas fa-plug"></i> Connect</button>
+            <div id="devices" class="devices-list"></div>
+            <div id="status"></div>
+        </div>
+        <p>Demo uses Web Bluetooth API. Pair a BLE device and control services.</p>
+    </section>
+
+    <section id="quickstart" class="quickstart">
+        <h2>Quickstart</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1. Install Ollama</h3>
+                <pre><code>ollama pull llama3.2:3b
+ollama serve</code></pre>
+            </div>
+            <div class="step">
+                <h3>2. Run MyAI</h3>
+                <pre><code>python myai.py</code></pre>
+                <p>Chat: myai> Hello!</p>
+            </div>
+            <div class="step">
+                <h3>3. Rust CLI</h3>
+                <pre><code>cd rust && cargo run --bin claw-cli</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Download</h2>
+        <a href="../myai.py" class="btn primary" download>Download myai.py</a>
+        <a href="https://github.com/shiyansab486-creator/Cloud-Code" class="btn secondary">GitHub Repo</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MyAI-Tool. Powered by Ollama & Web APIs. | <a href="mailto:example@email.com">Contact</a></p>
+        <img src="../assets/instructkr.png" alt="Powered by" class="footer-img">
+        <img src="../assets/tweet-screenshot.png" alt="Featured">
+        <img src="../assets/wsj-feature.png" alt="WSJ">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
